@@ -1,0 +1,202 @@
+% preamble
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in, footskip=0.25in]{geometry} % para configurar los margenes
+\usepackage[shortlabels]{enumitem} % para usar enumerate con letras
+\usepackage{commath} % para usar \norm{} 
+\usepackage{mathabx} % para usar \check{} para versores
+\usepackage{siunitx} % para usar \ang{}
+\usepackage{stmaryrd} % para usar \sslash
+
+\title{\'Algebra y Geometr\'ia Anal\'itica} % crea el titulo
+
+\date{}
+
+\begin{document} % inicia el documento
+
+\maketitle % imprime el titulo
+
+\begin{enumerate}
+\setcounter{enumi}{0} % inicia el contador
+
+% Ejercicio 1
+\item Recuerde, ¿qu\'e es un vector? Seleccione y marque la opci\'on correcta. Un vector es:
+
+\begin{enumerate}[a)]
+\item Dos puntos en el plano \textit{xy}
+\item Un segmento de recta entre dos puntos.
+\item Un segmento de recta dirigido que tiene m\'odulo, direcci\'on y sentido.
+\end{enumerate}
+
+% Ejercicio 2
+\item Graficar los siguientes puntos en $\mathbb{R}^{2}$ o en $\mathbb{R}^{3}$ seg\'un corresponda. Para ello dibuje los ejes correspondientes (\textit{x, y}) o (\textit{x, y, z}). \par
+
+$A = (3, 4)$, $B = (0, -2)$, $C = (-1, -5)$, $D = (2, 3, 4)$, $E = (-2, -3, 5)$, $F = (-2, 3, -4)$ 
+
+% Ejercicio 3
+\item A partir del concepto de vector de posici\'on (o localizaci\'on), grafique los vectores de posici\'on correspondientes a los puntos del apartado anterior.
+
+% Ejercicio 4
+\item Haciendo uso de GeoGebra, grafique los puntos mencionados en el apartado 2) y sus correspondientes vectores de posici\'on mencionados en el apartado 3).
+
+% Ejercicio 5 
+\item Dados los siguientes vectores $\vec{u}_{1} = (-1, 8)$, $\vec{u}_{2} = (2, 7)$ y $\vec{v} = (2, -5)$, repres\'entelos gr\'aficamente. Luego obtenga los siguientes vectores:
+
+\begin{enumerate}[a)]
+\item $\vec{w} = \vec{u}_{1} + \vec{u}_{2}$
+\item $\vec{u}_{1} + \vec{v}$ 
+\item $\vec{u}_{2} + \vec{v} + \vec{w}$
+\item $-\vec{u}_{1}$
+\item $\vec{v}$ - $\vec{u}_{2}$
+\item $\vec{u}_{2}$ - $\vec{v}$
+\end{enumerate}
+
+% Ejercicio 6
+\item Dados los siguientes vectores $\vec{u} = (6, -4, 6)$, $\vec{v} = (1, 5, 4)$ y $\vec{w} = (3, 2, 5)$, repres\'entelos gr\'aficamente. Luego obtenga los siguientes vectores:
+
+\begin{enumerate}[a)]
+\item $\vec{u} + \vec{v}$ 
+\item $\vec{u} + \vec{v} + \vec{w}$
+\item $-\vec{u}$
+\item $\vec{v}$ - $\vec{u}$
+\item $\vec{u}$ - $\vec{v}$
+\end{enumerate}
+
+% Ejercicio 7
+\item Dados los siguientes vectores $\vec{u} = (-1, 2, 3)$ y $\vec{v} = (0, -2, 5)$ y el escalar $k = -2$, encontrar los siguientes m\'odulos: \par
+
+\begin{enumerate}[a)]
+\item $\norm{\vec{u}}$
+\item $\norm{\vec{u} + \vec{v}}$ y comp\'arelo con $\norm{\vec{u}} + \norm{\vec{v}}$
+\item $\norm{k * \vec{u}}$ y comp\'arelo con $\abs{k} * \norm{\vec{u}}$ 
+\end{enumerate}
+
+% Ejercicio 8
+\item ¿Cu\'al es la caracter\'istica principal de un vector unitario? ¿Qu\'e otro nombre recibe? ¿C\'omo convertimos un vector en un vector unitario? Encuentra el versor o vector unitario de los siguientes vectores: 
+
+\begin{enumerate}[a)]
+\item $\vec{u} = (-2, 5, 4)$
+\item $\vec{v} = (0, -6, 0)$
+\item $\vec{w} = (2, 2, 2)$
+\end{enumerate}
+
+% Ejercicio 9
+\item ¿C\'omo se escribir\'ian los versores $\check{i}$, $\check{j}$ y $\check{k}$ en funci\'on de sus componentes? Dados los siguientes vectores $\vec{u} = 2 \check{i} - \check{j} + 3 \check{k}$ y $\vec{v} = 3 \check{j} + 2 \check{k}$, realice las siguientes operaciones y grafique los resultados:
+
+\begin{enumerate}[a)]
+\item $2\vec{u} + \vec{v}$
+\item $-\vec{u} + 2\vec{v}$ 
+\end{enumerate}
+
+% Ejercicio 10
+\item Dados los puntos $P = (1, -1, 5)$ y $Q = (-3, 1, 3)$. Encuentre los vectores de posici\'on de los puntos $P$ y $Q$ y el vector $\vec{PQ}$.
+
+% Ejercicio 11
+\item ¿Qu\'e son los \'angulos directores de un vector? ¿Cu\'al es la relaci\'on fundamental? Encuentre los \'angulos directores de los siguientes vectores $\vec{u} = (1, 3, 4)$, $\vec{v} = (1, 1, 1)$, $\vec{w} = (2, 3, 0)$, $\vec{t} = (0, 5, 2)$. Verifique la relaci\'on fundamental para los \'angulos directores encontrados anteriormente.
+
+% Ejercicio 12
+\item Dados los siguientes vectores, $\vec{u} = (-1, 3, 4)$, $\vec{v} = -2 \check{j} + 5 \check{k}$ y $\vec{w} = (3, 0, 4)$, realice los siguientes productos escalares:
+
+\begin{enumerate}[a)]
+\item $\vec{u} * \vec{v}$
+\item $\vec{v} * \vec{u}$
+\item $(\vec{u} + \vec{v}) * \vec{w}$
+\item $(\vec{u} * \vec{w}) + (\vec{v} * \vec{w})$
+\end{enumerate}
+
+% Ejercicio 13
+\item Calcule el \'angulo entre los vectores $\vec{u}$ y $\vec{v}$, $\vec{u}$ y $\vec{w}$ del punto anterior.
+
+% Ejercicio 14
+\item A partir de los vectores $\vec{u}$ y $\vec{v}$ del inciso 12) y recordando las condiciones de paralelismo y perpendicularidad entre vectores, verifique cu\'al de las siguientes condiciones cumplir\'ian:
+
+\begin{enumerate}[a)]
+\item $\vec{u}$ y $\vec{v}$ son ortogonales.
+\item $\vec{u}$ y $\vec{v}$ son paralelos.
+\item $\vec{u}$ y $\vec{v}$ no son paralelos ni ortogonales.
+\end{enumerate}
+
+% Ejercicio 15
+\item Encuentre un vector ortogonal al vector $\vec{t} = (-1, 4, 3)$. ¿Cu\'antos vectores ortogonales podr\'ian encontrarse para el vector $\vec{t}$?
+
+% Ejercicio 16
+\item Dados los vectores $\vec{u} = (3, 2, 4)$ y $\vec{v} = (2, -1, 5)$ encuentre el vector proyecci\'on de $\vec{u}$ en la direcci\'on de $\vec{v}$. Calcule el m\'odulo de la proyecci\'on.
+
+% Ejercicio 17
+\item Dados los siguientes pares de vectores, realice los productos vectoriales correspondientes:
+
+\begin{enumerate}[a)]
+\item $\vec{u} = (1, -1, 7)$ y $\vec{v} = (2, -3, 0)$
+\item $\vec{u} = (2, -1, 3)$ y $\vec{v} = (4, -2, 6)$
+\item Entre los versores $\check{i}$ y $\check{j}$
+\item Entre los versores $-\check{j}$ y $\check{k}$
+\end{enumerate}
+
+% Ejercicio 18
+\item Calcule el siguiente producto mixto:
+
+\begin{enumerate}[a)]
+\item $\check{i} * (\check{j} \times \check{k})$
+\item $(1, 1, 1) * ((-2, 3, 5) \times (-1, 4, 2))$
+\end{enumerate}
+
+% Ejercicio 19
+\item Investigue en la bibliograf\'ia recomendada sobre el producto mixto entre vectores, y a continuaci\'on conteste las siguientes preguntas:
+
+\begin{enumerate}[a)]
+\item ¿Qu\'e operaciones y en qu\'e orden deben efectuarse para calcular un producto mixto entre vectores?
+\item ¿Cu\'al es la expresi\'on de c\'alculo del producto mixto entre vectores?
+\item Escriba y ejemplifique las propiedades del producto mixto entre vectores.
+\item ¿C\'omo se establece si tres vectores del espacio tridimensional son coplanares?
+\item ¿Qu\'e interpretaci\'on geom\'etrica admite el valor absoluto del producto mixto entre vectores? Definici\'on, propiedades e interpretaci\'on geom\'etrica.
+\end{enumerate}
+ 
+% Ejercicio 20 
+\item Debate con tus compa\~neros la veracidad o falsedad de las siguientes afirmaciones. Para que tu respuesta sea v\'alida debes justificarla adecuadamente, por lo cual puedes emplear definiciones, ejemplos, gr\'aficos, c\'alculos.
+
+\begin{enumerate}[1)]
+\setcounter{enumi}{0} % inicia el contador
+
+\item El vector $\vec{u} = (1, 1, 1)$ es un versor.
+\item Los vectores $\vec{u} = (1, 0, 1)$ y $\vec{v} = (0, 1, 0)$ son paralelos.
+\item Los vectores $\vec{u} = (1, 2,-1)$ y $\vec{v} = (-2, -4, 2)$ son perpendiculares.
+\item Los \'angulos que forma el versor fundamental $\check{i}$ en $\mathbb{R}^{3}$ con los ejes coordenados (\textit{x, y, z}) valen $\ang{0}$, $\ang{90}$ y $\ang{180}$ respectivamente.
+\item Un versor determina una y solo una direcci\'on en el espacio.
+\item Las componentes de un versor son los \'angulos directores de su direcci\'on.
+\item Una direcci\'on se establece un\'ivocamente mediante un versor o su opuesto.
+\item Todo versor es vector y todo vector es versor.
+\item La distancia entre dos puntos del plano o del espacio es igual al m\'odulo del vector que los tiene
+por origen y extremo respectivamente.
+\item M\'odulo, longitud, magnitud son vocablos sin\'onimos.
+\item Un vector en el plano se define por sus dos componentes, o mediante su m\'odulo y su argumento.
+\item Para establecer una direcci\'on en el plano se requiere conocer sus dos \'angulos directores.
+\item El vector nulo de $\mathbb{R}^{2}$ es perpendicular a cualquier otro vector del plano.
+\item Un punto del plano o del espacio puede ubicarse mediante sus coordenadas cartesianas o
+mediante su vector posici\'on.
+\item Un vector perpendicular al eje \textit{z} es paralelo a cualquier vector del plano \textit{xy}.
+\item Si un vector es paralelo al eje \textit{y}, tambi\'en es paralelo al eje \textit{z}.
+\item Num\'ericamente, las coordenadas cartesianas de un punto (de $\mathbb{R}^{2}$ o $\mathbb{R}^{3}$) son iguales a las
+componentes del vector posici\'on del punto.
+\item Cuando normalizamos un vector estamos hallando un versor paralelo al vector dado.
+\item $\norm{\vec{u} \times \vec{v}} = \norm{\vec{v} \times \vec{u}}$ 
+\item El producto escalar no es conmutativo.
+\item Si $\vec{u} \times \vec{v} = \vec{0}$, entonces $\vec{u} \sslash \vec{v}$
+\item La distancia entre cualquier punto (de $\mathbb{R}^{2}$ o $\mathbb{R}^{3}$) al origen es igual al m\'odulo de su vector posici\'on.
+\item Si $\vec{u} = k \vec{v}$, (donde $\vec{u}$ y $\vec{v}$ son vectores de $\mathbb{R}^{2}$ o $\mathbb{R}^{3}$ y $k$ un n\'umero real) entonces $\norm{\vec{u}} > \norm{\vec{v}}$
+\item Si un vector es m\'ultiplo de otro entonces ambos son perpendiculares.
+\item Si $\vec{w}$ es combinaci\'on lineal de $\vec{u}$ y de $\vec{v}$, entonces ambos son perpendiculares.
+\item El m\'odulo del producto vectorial $\vec{u} \times \vec{v}$ es igual al \'area del paralelogramo que tiene por lados a $\vec{u}$ y $\vec{v}$
+\item Si $\vec{u} = (u_{1}, 1, 3)$ y $\norm{u}^{2} = 11$ entonces $u_{1} = 1$ o $u_{1} = -1$
+\item Todos los vectores del plano o del espacio, que tienen la misma direcci\'on, el mismo sentido y el mismo m\'odulo, pero que difieren en su punto origen, pertenecen a una misma familia. Se dice que son equivalentes.
+\item El vector nulo (de $\mathbb{R}^{2}$ o $\mathbb{R}^{3}$) no tiene direcci\'on ni sentido y su m\'odulo vale cero.
+\item El vector nulo (de $\mathbb{R}^{2}$ o $\mathbb{R}^{3}$) se representa geom\'etricamente por el punto origen del sistema de
+coordenadas cartesianas.
+\end{enumerate}
+
+\end{enumerate} % cierra la enumeracion de los ejercicios
+
+\end{document} % cierra el documento
